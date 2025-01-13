@@ -8,7 +8,7 @@ use App\Models\Character;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 
 //Auth only
@@ -63,4 +63,6 @@ Route::middleware([
     Route::get('/teamRandomizer', function () {
         return view('team-randomizer.main');
     })->name('team-randomizer');
+
+    Route::get('download-box-pdf', 'App\Http\Controllers\BoxController@downloadBoxPdf')->name('download-box-pdf');
 });

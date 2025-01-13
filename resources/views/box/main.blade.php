@@ -14,7 +14,9 @@
         </div>
 
         <div class="flex py-10 justify-center">
-            <x-button>Export Box</x-button>
+            <a href="{{route('download-box-pdf')}}" target="_blank" class="text-center">
+                <x-button>Export Box</x-button>
+            </a>
         </div>
 
         <div class="max-w-full mx-auto sm:px-6 lg:px-8">
